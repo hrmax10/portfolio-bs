@@ -7,6 +7,7 @@
 }
 body{
     font-family: 'Trispace', sans-serif;
+    background-color: #F0FFFF;
 }
 /* navbar design  */
 .navbar-brand{
@@ -52,18 +53,54 @@ body{
 .menuIconHolder span:nth-child(3){
      transform: translateY(8px);
 }
-
-
-
-.openmenu span:nth-child(1).one{
+.openMenu span:nth-child(1).one{
     /* transform: translateY(-11px); */
      transform: rotate(135deg); 
 }
-.openmenu span:nth-child(2).two{
+.openMenu span:nth-child(2).two{
     /* transform: translateY(-11px); */
      transform: scale(0); 
 }
-.openmenu span:nth-child(3).three{
+.openMenu span:nth-child(3).three{
     /* transform: translateY(-11px); */
      transform: rotate(-135deg); 
+}
+
+/* hero section start here  */
+
+.heroSection{
+    min-height: 94vh;
+    width: 100%;
+    background: url(../images/home-wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.heroImg{
+    position: relative;
+}
+.heroImg img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* media queries  */
+
+@media only screen and (max-width: 768px) {
+    
+    .heroImg img{
+        width: 90%;
+        top: 36px;
+        left: 3%;
+    }
+    .heroSection{
+        text-align: center;
+    }
+   
+}
+@media only screen and (max-width:576px){
+    .heroSection{
+        background-size: cover;
+    }
 }
