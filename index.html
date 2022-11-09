@@ -37,7 +37,7 @@
           <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
             <li class="nav-item mx-2"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">Skills</a>
@@ -55,7 +55,7 @@
     <!-- navbar end here  -->
 
     <!-- hero section start here -->
-    <section class="heroSection" id="home">
+    <section class="heroSection parallax-item" id="home">
       <div class="container">
         <div class="row pt-md-5">
           <div class="col-md-7 mt-md-5">
@@ -77,6 +77,82 @@
       <!-- <img src="./images/home-wave.svg" alt="waves"> -->
     </section>
     <!-- hero section end here -->
+
+    <!-- about section start here -->
+    <section class="aboutSection parallax-item" id="about">
+      <div class="container">
+        <h1 class="text-center text-white pt-4">
+          About Me<span class="underLine"></span>
+        </h1>
+        <div class="row mt-4">
+          <div class="col-md-5 text-center">
+            <img src="./images/photo_2022-11-08_20-06-06 .jpg " alt="" />
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3>Who am I</h3>
+            <p class="mt-4">
+              I am <strong>Habibur Rahman</strong>. I am a frontend
+              <strong>Web Developer</strong> from <strong>Bangladesh</strong>. I
+              am also expert on <strong>Google Search</strong>. I can understand
+              topics easy and fast, so you can call me
+              <strong> Quick Learner</strong> too. I am always here to help you
+              creating an attractive modern Website.
+            </p>
+
+            <div class="tabTitles mt-5">
+              <p class="tabLinks activeLinks" onclick="openTab('serviceTab')">
+                Services
+              </p>
+              <p class="tabLinks" onclick="openTab('educationTab')">
+                Education
+              </p>
+              <p class="tabLinks" onclick="openTab('experienceTab')">
+                Experience
+              </p>
+            </div>
+
+            <div class="tabContents activeTab" id="serviceTab">
+              <ul>
+                <li>
+                  <span>Web Design</span> <br />Designing a complete Website.
+                </li>
+                <li>
+                  <span>SEO</span><br />Search Engine Optimization For your
+                  Website.
+                </li>
+                <li>
+                  <span>Bug Fixing</span><br />Hunting and Fixing minor Bugs of
+                  your Website.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabContents" id="educationTab">
+              <ul>
+                <li>
+                  <span>2018</span> <br />JSC - Arani M.M. Govt. High School.
+                </li>
+                <li>
+                  <span>2022</span><br />SSC - Arani M.M. Govt. High School.
+                </li>
+                <li><span>2023</span><br />HSC - Shahdowla Govt. College.</li>
+              </ul>
+            </div>
+
+            <div class="tabContents" id="experienceTab">
+              <ul>
+                <li>
+                  <span>Pending</span><br />This tab is under Maintenance.🙂
+                </li>
+              </ul>
+            </div>
+
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end here -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"
